@@ -4,15 +4,13 @@ const del = document.getElementById("delete");
 const list = document.getElementById("list");
 const list2 = document.getElementById("list2");
 
-let doList = [];
-
 add.addEventListener("click", () => {
   if (!input.value) {
     alert("Don't you have anything to do today");
   } else {
     list2.innerHTML = "";
     list.innerHTML += `<li id="too2"><button class="acc btn btn-info text-white "><i class="bi bi-calendar-check"></i></button> <button class="wasted btn btn-danger"><i class="bi bi-calendar-x"></i></button>  ${input.value} </li>`;
-    doList.push(input.value);
+
     input.value = "";
     input.focus();
     document.querySelectorAll(".acc").forEach((e) => {
