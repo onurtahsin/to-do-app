@@ -14,7 +14,7 @@ add.addEventListener("click", () => {
     input.value = "";
     input.focus();
     document.querySelectorAll(".acc").forEach((e) => {
-      e.preventDefault;
+//       e.preventDefault;
       e.addEventListener("click", () => {
         e.parentElement.classList.toggle("text-danger", " bi bi-trophy-fill");
       });
